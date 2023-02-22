@@ -23,7 +23,7 @@ function windowResized(){
   resizeCanvas(windowWidth-50, windowHeight-50);
 }
 function setup(){
-  colorMode(HSB,360,100,100,1);
+  colorMode(HSB,360,50,50,1);
   canv = createCanvas(windowWidth-50,windowHeight-50);
   canv.parent("canvas");
   for(var i = 0; i < 300; i++){
@@ -47,9 +47,9 @@ function setup(){
   flockmateslider = createSlider(20,60,50,10);
   flockmateslider.parent('flockrad');
   flockmateslider.style('width', '100px');
-  buttonbird = createButton("Bird");
+  buttonbird = createButton("Fugle animation");
   buttonbird.parent("birdpar");
-  buttonfish = createButton("Fish");
+  buttonfish = createButton("Fiske animation");
   buttonfish.parent("fishpar");
 
 }

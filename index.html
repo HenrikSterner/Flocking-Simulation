@@ -17,10 +17,11 @@
 </head>
 
 <body>
-  <h1>Flocking Simulation</h1>
+  <h1>Simulering af Reynolds flok algoritme med predator</h1>
+  Parametre:
   <div id="canvas"></div>
   <div class="horizontal">
-      <p>Peripheral Vision:<span id="vi_val"></span></p>
+      <p>Synsfelt:<span id="vi_val"></span></p>
       <div id="visionpar"></div>
       <p>Alignment:<span id="ali_val"></span></p>
       <div id="alignpar"></div>
@@ -28,34 +29,12 @@
       <div id="cohesionpar"></div>
       <p>Separation:<span id="sep_val"></span></p>
       <div id="separationpar"></div>
-      <p>Flockmate Radius:<span id="flock_val"></span></p>
+      <p>Radius:<span id="flock_val"></span></p>
       <div id="flockrad"></div>
       <div id="birdpar"></div>
       <div id="fishpar"></div>
   </div>
-  <div id="intro">
-    <p>This Simulation is based upon Craig Reynolds "Boid" algorithm which simulates the flocking behavoiur
-      of birds. Individual boid objects follow four simple steering rules:</p>
-      <ul>
-        <li>Alignment: head towards average direction of nearby boids.</li>
-        <li>Cohesion: steer towards the average location of nearby boids.</li>
-        <li>Separation: Avoid Colision with nearby boids.</li>
-        <li>Flee: Run away from predators.</li>
-      </ul>
-    <p> The weights of each steering force can be manipulated by sliders. Boids can also see other
-      neighbouring boids which are within their 'Peripheral Vision' and align towards them, this is responsible
-      for the 'V' shape observed in bird flocks. Click on the canvas to add Boid objects.</p>
-    <p>Further Reading:</p>
-    <ul>
-        <li><a href="http://www.red3d.com/cwr/boids/" target="_blank">Craig Reynolds' Reference</a></li>
-        <li><a href="https://thecodingtrain.com/CodingChallenges/124-flocking-boids.html" target="_blank">
-            More Boids
-        </a></li>
-        <li><a href="https://www.youtube.com/watch?v=4LWmRuB-uNU" target="_blank"> Flocking Boids-Smarter EveryDay</a></li>
-        <li>This simulation is Quadtree Optimized: <a href="https://en.wikipedia.org/wiki/Quadtree" target="_blank">QuadTree</a></li>
-    </ul>
-    <p>You can find the code <a href="https://github.com/knaticat/Flocking-Simulation" target="_blank">here</a>.</p>
-  </div>
+ 
 </body>
 
 </html>
